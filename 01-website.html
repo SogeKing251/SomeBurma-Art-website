@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Fun game</title>
+
+  
+  </head>
+  <body>
+    
+   
+   <div><input class="search-bar" type="text" placeholder="Search">
+    </div>
+
+    
+   <div class="rps">Rock Paper Scissors</div>
+
+  <button class="ro" onclick="
+    pickComputerMove();
+
+     console.log(ComputerMove);
+
+     let result = '';
+
+
+      alert(`you picked rock. computer picked ${ComputerMove}. ${result}`);
+
+
+
+  "><img class="
+    OIP" src="OIP.jpg">
+  </button>
+
+
+  <button class="
+   Pa
+  " onclick="
+  pickComputerMove();
+
+   console.log(ComputerMove);
+    let result = '';
+
+     
+    if (ComputerMove ==='rock') {
+        result ='You win';
+      } else if (ComputerMove === 'paper') {
+        result = 'tie';
+      } else if (ComputerMove ==='scissors') {
+        result ='youlose';
+      }
+
+     alert(`you picked paper. computer picked ${ComputerMove}. ${result}`);
+  "><img class="paper" src="notebook-sheet-white-blank-page-paper-list-from-notepad-flat-cartoon-icon-vector.jpg
+  "></button>
+
+  <button class="
+    Sc
+  " onclick="
+       pickComputerMove();
+
+console.log(ComputerMove);
+ let result = '';
+
+  
+ if (ComputerMove ==='rock') {
+     result ='You lose';
+   } else if (ComputerMove === 'paper') {
+     result = 'Tou Win';
+   } else if (ComputerMove ==='scissors') {
+     result ='tie';
+   }
+
+  alert(`you picked scissor. computer picked ${ComputerMove}. ${result}`);
+">
+  <img class="sc" src="OIP (1).jpg"></button>
+  <style>
+
+    .OIP {
+      width: 200px;
+      
+      
+    }
+
+    .Pa {
+     margin-left: 100px;
+    }
+
+    .ro {
+      margin-left: 200px;
+      margin-bottom: 200px;
+    }
+
+    .Sc {
+      margin-left: 100px;
+    }
+    
+    .paper {
+      width: 200px;
+    }
+
+    .sc {
+      width: 200px;
+    }
+
+    .rps {
+      width: 500px;
+      margin-left: 450px;
+      font-size: 50px;
+      height: auto;
+      margin-bottom: 100px;
+      
+    }
+
+    .search-bar {
+      margin-left: 900px;
+      width: 250px;
+      size: 150px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      border-radius: 7px;
+      
+
+    }
+
+    
+
+    
+    
+    
+
+  </style>
+
+  <script>
+    let ComputerMove = '';
+
+     function pickComputerMove () {
+      const randomnumber = Math.random();
+
+      if (randomnumber >= 00 && randomnumber < 1 / 3) {
+          ComputerMove = 'rock'
+     } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
+      ComputerMove ='paper';
+     } else if (randomnumber >= 2 / 3 && randomnumber < 1) {
+      ComputerMove ='scissors';
+     }
+    }
+
+
+  </script>
+    
+
+  </body>
+</html>
